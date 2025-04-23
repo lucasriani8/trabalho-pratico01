@@ -1,4 +1,3 @@
-// JSON data structure for movies
 const dados = {
     "filmes": [
         {
@@ -169,7 +168,6 @@ const dados = {
     ]
 };
 
-// Function to get URL parameters
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
     var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -177,14 +175,12 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
-// Function to load home page content
 function loadHomePage() {
     loadFeaturedMovies();
     loadAllMovies();
     loadFooterInfo();
 }
 
-// Function to load featured movies in carousel
 function loadFeaturedMovies() {
     const featuredMoviesContainer = document.querySelector('#featured-carousel .carousel-inner');
     const featuredMovies = dados.filmes.filter(filme => filme.destaque);
@@ -208,7 +204,6 @@ function loadFeaturedMovies() {
     });
 }
 
-// Function to load all movies in cards
 function loadAllMovies() {
     const moviesContainer = document.querySelector('#all-movies .row');
     
@@ -235,7 +230,6 @@ function loadAllMovies() {
     });
 }
 
-// Function to load footer information
 function loadFooterInfo() {
     const footerContainer = document.querySelector('#footer-info');
     
@@ -257,7 +251,6 @@ function loadFooterInfo() {
     `;
 }
 
-// Function to load movie details page
 function loadMovieDetails() {
     const id = parseInt(getUrlParameter('id'));
     
@@ -275,7 +268,6 @@ function loadMovieDetails() {
         return;
     }
     
-    // Load movie info
     const movieInfoContainer = document.querySelector('#movie-info');
     movieInfoContainer.innerHTML = `
         <div class="row">
@@ -302,7 +294,6 @@ function loadMovieDetails() {
         </div>
     `;
     
-    // Load movie images
     const movieImagesContainer = document.querySelector('#movie-images .row');
     filme.imagens_complementares.forEach(imagem => {
         const imageCol = document.createElement('div');

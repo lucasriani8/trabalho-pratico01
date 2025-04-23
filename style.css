@@ -1,11 +1,9 @@
-/* Resetando alguns estilos padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0f0f0f;
@@ -13,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
     background-color: #000000;
     border-bottom: 1px solid #333;
@@ -46,7 +43,6 @@ header {
     color: #e60000;
 }
 
-/* Banner principal */
 #featured-movies {
     background-color: #000000;
     padding: 0;
@@ -97,7 +93,6 @@ header {
     object-fit: cover;
 }
 
-/* Barra de pesquisa */
 .search-section {
     background-color: #111111;
     padding: 2rem 0;
@@ -137,7 +132,6 @@ header {
     border-radius: 0;
 }
 
-/* Seção de filmes */
 #all-movies {
     background-color: #0f0f0f;
     padding: 3rem 0;
@@ -217,7 +211,6 @@ header {
     background-color: #cc0000;
 }
 
-/* Destaque nos filmes */
 .destaque-badge {
     position: absolute;
     top: 10px;
@@ -230,7 +223,6 @@ header {
     z-index: 10;
 }
 
-/* Página de detalhes */
 #movie-details {
     background-color: #0f0f0f;
     padding: 3rem 0;
@@ -286,7 +278,6 @@ header {
     text-transform: uppercase;
 }
 
-/* Footer */
 footer {
     background-color: #000000;
     color: #999999;
@@ -301,7 +292,6 @@ footer h4 {
     font-weight: 600;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
     #featured-carousel .carousel-item {
         height: 350px;
@@ -351,7 +341,6 @@ footer h4 {
     }
 }
 
-/* Adicionando o estilo para etiqueta "HOT" como na imagem de referência */
 .hot-badge {
     position: absolute;
     top: 10px;
