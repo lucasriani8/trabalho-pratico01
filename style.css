@@ -1,0 +1,365 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 0.5rem 0;
+}
+
+.navbar-brand h1 {
+    font-weight: 700;
+    color: #e60000;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e60000;
+}
+
+/* Banner principal */
+#featured-movies {
+    background-color: #000000;
+    padding: 0;
+}
+
+.carousel-caption {
+    background-color: rgba(230, 0, 0, 0.8);
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.carousel-caption h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption .btn {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #ffffff;
+    color: #e60000;
+}
+
+#featured-carousel .carousel-item {
+    height: 400px;
+}
+
+#featured-carousel img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Barra de pesquisa */
+.search-section {
+    background-color: #111111;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.search-section h2 {
+    color: #e60000;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.search-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-form input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: none;
+    background-color: #222222;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.search-form button {
+    background-color: #e60000;
+    color: #ffffff;
+    border: none;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+/* Seção de filmes */
+#all-movies {
+    background-color: #0f0f0f;
+    padding: 3rem 0;
+}
+
+#all-movies h2 {
+    color: #e60000;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.badge {
+    border-radius: 0;
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.bg-secondary {
+    background-color: #333333 !important;
+}
+
+.bg-info {
+    background-color: #333333 !important;
+}
+
+.bg-primary {
+    background-color: #e60000 !important;
+}
+
+.card .btn {
+    background-color: #e60000;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.card .btn:hover {
+    background-color: #cc0000;
+}
+
+/* Destaque nos filmes */
+.destaque-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e60000;
+    color: #ffffff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+/* Página de detalhes */
+#movie-details {
+    background-color: #0f0f0f;
+    padding: 3rem 0;
+    min-height: 80vh;
+}
+
+.back-btn {
+    background-color: transparent;
+    border: 1px solid #e60000;
+    color: #e60000;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.back-btn:hover {
+    background-color: #e60000;
+    color: #ffffff;
+}
+
+#movie-info img {
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#movie-info h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.movie-synopsis {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.movie-synopsis h4 {
+    color: #e60000;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+#movie-images h3 {
+    color: #e60000;
+    font-size: 1.5rem;
+    margin: 2rem 0 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #999999;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+footer h4 {
+    color: #e60000;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    #featured-carousel .carousel-item {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    #featured-carousel .carousel-item {
+        height: 300px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.4rem;
+    }
+    
+    #movie-info h1 {
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #featured-carousel .carousel-item {
+        height: 250px;
+    }
+    
+    .carousel-caption {
+        padding: 0.8rem;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+    
+    .search-form {
+        flex-direction: column;
+    }
+    
+    .search-form button {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    #movie-info .badges .badge {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Adicionando o estilo para etiqueta "HOT" como na imagem de referência */
+.hot-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e60000;
+    color: #ffffff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    z-index: 10;
+}
